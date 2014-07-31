@@ -14,7 +14,7 @@ while True:
     mon_num  = d.month
     day_num  = d.day
     day_name = d.weekday()
-    if day_num < 30 and day_name >= 0:
+    if day_num < 32 and day_name >= 0:
         # Fetch current price data from Yahoo Finance
         url = 'http://real-chart.finance.yahoo.com/table.csv?s=%%5EGSPC&d=%d&e=%d&f=%d&g=d&a=0&b=3&c=1950&ignore=.csv' % (mon_num,day_num,yr_num)
         urllib.urlretrieve(url,'sp500_history.csv')
