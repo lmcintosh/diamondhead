@@ -71,11 +71,11 @@ while True:
         
         
         # CURRENT MODEL
-        lam = -0.0039371799019069665
-        alpha_d = 1.6387065003802097
-        alpha_p = 0.00012930819425967602
-        beta_d  = 0.26391542623164571
-        beta_p  = -4.866531100483897e-05
+        lam     = 1.86335669e-01
+        alpha_d = 1.20807310e+01
+        beta_d  = -3.47832606e-01
+        alpha_p = 2.10488221e-04
+        beta_p  = -2.27735354e-04
 
         # RUN MODEL
         discount,fraction_to_buy = runModel(lam,alpha_d,beta_d,alpha_p,beta_p,monthly_shareprice,monthly_household_income)
