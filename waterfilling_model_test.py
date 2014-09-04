@@ -96,7 +96,7 @@ while True:
         if fraction_to_hold > 1.0:
             fraction_to_hold = 1.0
 
-        msg = 'Today is %d-%d-%d and the S&P last closed at %d. Market is currently %s with %s %d%%. Buy %d%% stocks and keep %d%% cash.' % (mon_num,day_num,yr_num,price,market_condition, discount_or_premium, np.abs(100.*discount), 100.*fraction_to_buy, 100.*fraction_to_hold)
+        msg = 'Today is %d-%d-%d and the S&P last closed at %d. Market is currently %s with %s %d%%. Buy %d%% stocks and keep %d%% cash.' % (mon_num,day_num,yr_num,monthly_shareprice[-1],market_condition, discount_or_premium, np.abs(100.*discount), 100.*fraction_to_buy, 100.*fraction_to_hold)
         emailMe(msg)
         time.sleep(24*60*60) # Go to sleep after sending message
 
