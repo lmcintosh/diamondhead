@@ -78,7 +78,7 @@ while True:
         beta_p  = -2.27735354e-04
 
         # RUN MODEL
-        discount,fraction_to_buy = runModel(lam,alpha_d,beta_d,alpha_p,beta_p,monthly_shareprice,monthly_household_income)
+        discount,fraction_to_buy = runModel(lam,alpha_d,beta_d,alpha_p,beta_p,monthly_shareprice)
 
         if discount >= 0.0:
             market_condition = 'cheap'
